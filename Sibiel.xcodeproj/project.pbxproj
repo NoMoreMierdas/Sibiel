@@ -13,6 +13,10 @@
 		4E2BA815258764D700B53E70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2BA814258764D700B53E70 /* Preview Assets.xcassets */; };
 		4E2BA821258764D800B53E70 /* SibielTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BA820258764D800B53E70 /* SibielTests.swift */; };
 		4E2BA82C258764D800B53E70 /* SibielUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BA82B258764D800B53E70 /* SibielUITests.swift */; };
+		4E9D3C4C25877102005E9BD1 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E9D3C4B25877102005E9BD1 /* Quartz.framework */; };
+		4E9D3C4F25877102005E9BD1 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D3C4E25877102005E9BD1 /* PreviewViewController.swift */; };
+		4E9D3C5225877102005E9BD1 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E9D3C5025877102005E9BD1 /* PreviewViewController.xib */; };
+		4E9D3C5725877102005E9BD1 /* NFOExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4E9D3C4925877102005E9BD1 /* NFOExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +34,28 @@
 			remoteGlobalIDString = 4E2BA809258764D600B53E70;
 			remoteInfo = Sibiel;
 		};
+		4E9D3C5525877102005E9BD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E2BA802258764D600B53E70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E9D3C4825877102005E9BD1;
+			remoteInfo = NFOExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4E9D3C5825877102005E9BD1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4E9D3C5725877102005E9BD1 /* NFOExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4E2BA80A258764D600B53E70 /* Sibiel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sibiel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +71,12 @@
 		4E2BA827258764D800B53E70 /* SibielUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SibielUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E2BA82B258764D800B53E70 /* SibielUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SibielUITests.swift; sourceTree = "<group>"; };
 		4E2BA82D258764D800B53E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E9D3C4925877102005E9BD1 /* NFOExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NFOExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E9D3C4B25877102005E9BD1 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		4E9D3C4E25877102005E9BD1 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		4E9D3C5125877102005E9BD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PreviewViewController.xib; sourceTree = "<group>"; };
+		4E9D3C5325877102005E9BD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E9D3C5425877102005E9BD1 /* NFOExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NFOExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +101,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4E9D3C4625877102005E9BD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E9D3C4C25877102005E9BD1 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +118,8 @@
 				4E2BA80C258764D600B53E70 /* Sibiel */,
 				4E2BA81F258764D800B53E70 /* SibielTests */,
 				4E2BA82A258764D800B53E70 /* SibielUITests */,
+				4E9D3C4D25877102005E9BD1 /* NFOExtension */,
+				4E9D3C4A25877102005E9BD1 /* Frameworks */,
 				4E2BA80B258764D600B53E70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +130,7 @@
 				4E2BA80A258764D600B53E70 /* Sibiel.app */,
 				4E2BA81C258764D800B53E70 /* SibielTests.xctest */,
 				4E2BA827258764D800B53E70 /* SibielUITests.xctest */,
+				4E9D3C4925877102005E9BD1 /* NFOExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +174,25 @@
 			path = SibielUITests;
 			sourceTree = "<group>";
 		};
+		4E9D3C4A25877102005E9BD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E9D3C4B25877102005E9BD1 /* Quartz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E9D3C4D25877102005E9BD1 /* NFOExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4E9D3C4E25877102005E9BD1 /* PreviewViewController.swift */,
+				4E9D3C5025877102005E9BD1 /* PreviewViewController.xib */,
+				4E9D3C5325877102005E9BD1 /* Info.plist */,
+				4E9D3C5425877102005E9BD1 /* NFOExtension.entitlements */,
+			);
+			path = NFOExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,10 +203,12 @@
 				4E2BA806258764D600B53E70 /* Sources */,
 				4E2BA807258764D600B53E70 /* Frameworks */,
 				4E2BA808258764D600B53E70 /* Resources */,
+				4E9D3C5825877102005E9BD1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4E9D3C5625877102005E9BD1 /* PBXTargetDependency */,
 			);
 			name = Sibiel;
 			productName = Sibiel;
@@ -188,6 +251,23 @@
 			productReference = 4E2BA827258764D800B53E70 /* SibielUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4E9D3C4825877102005E9BD1 /* NFOExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E9D3C5B25877102005E9BD1 /* Build configuration list for PBXNativeTarget "NFOExtension" */;
+			buildPhases = (
+				4E9D3C4525877102005E9BD1 /* Sources */,
+				4E9D3C4625877102005E9BD1 /* Frameworks */,
+				4E9D3C4725877102005E9BD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NFOExtension;
+			productName = NFOExtension;
+			productReference = 4E9D3C4925877102005E9BD1 /* NFOExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +288,9 @@
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = 4E2BA809258764D600B53E70;
 					};
+					4E9D3C4825877102005E9BD1 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 				};
 			};
 			buildConfigurationList = 4E2BA805258764D600B53E70 /* Build configuration list for PBXProject "Sibiel" */;
@@ -226,6 +309,7 @@
 				4E2BA809258764D600B53E70 /* Sibiel */,
 				4E2BA81B258764D800B53E70 /* SibielTests */,
 				4E2BA826258764D800B53E70 /* SibielUITests */,
+				4E9D3C4825877102005E9BD1 /* NFOExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -251,6 +335,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E9D3C4725877102005E9BD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E9D3C5225877102005E9BD1 /* PreviewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +374,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4E9D3C4525877102005E9BD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E9D3C4F25877102005E9BD1 /* PreviewViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -295,7 +395,23 @@
 			target = 4E2BA809258764D600B53E70 /* Sibiel */;
 			targetProxy = 4E2BA828258764D800B53E70 /* PBXContainerItemProxy */;
 		};
+		4E9D3C5625877102005E9BD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E9D3C4825877102005E9BD1 /* NFOExtension */;
+			targetProxy = 4E9D3C5525877102005E9BD1 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E9D3C5025877102005E9BD1 /* PreviewViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E9D3C5125877102005E9BD1 /* Base */,
+			);
+			name = PreviewViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4E2BA82E258764D800B53E70 /* Debug */ = {
@@ -416,6 +532,7 @@
 		4E2BA831258764D800B53E70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Sibiel/Sibiel.entitlements;
@@ -440,6 +557,7 @@
 		4E2BA832258764D800B53E70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Sibiel/Sibiel.entitlements;
@@ -545,6 +663,46 @@
 			};
 			name = Release;
 		};
+		4E9D3C5925877102005E9BD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NFOExtension/NFOExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q439HWVNT9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = NFOExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dag.mac.Sibiel.NFOExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4E9D3C5A25877102005E9BD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NFOExtension/NFOExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q439HWVNT9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = NFOExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dag.mac.Sibiel.NFOExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -580,6 +738,15 @@
 			buildConfigurations = (
 				4E2BA837258764D800B53E70 /* Debug */,
 				4E2BA838258764D800B53E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E9D3C5B25877102005E9BD1 /* Build configuration list for PBXNativeTarget "NFOExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E9D3C5925877102005E9BD1 /* Debug */,
+				4E9D3C5A25877102005E9BD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
